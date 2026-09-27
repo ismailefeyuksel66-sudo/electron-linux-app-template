@@ -22,7 +22,7 @@ A lightweight starter template to build and package desktop applications for Lin
    Clone or use this repository as a template:
    ```bash
    git clone https://github.com/ismailefeyuksel66-sudo/electron-linux-app-template.git
-   cd electron-linux-template
+   cd electron-linux-app-template
    ```
 1. Install dependencies:
    ```bash
