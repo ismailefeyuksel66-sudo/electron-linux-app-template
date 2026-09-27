@@ -1,0 +1,36 @@
+{
+  "name": "electron-linux-template",
+  "version": "1.0.0",
+  "description": "A minimal Electron starter template for Linux desktop applications.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:appimage": "electron-builder --linux AppImage",
+    "build:deb": "electron-builder --linux deb",
+    "build:all": "electron-builder --linux AppImage deb"
+  },
+  "keywords": ["electron", "linux", "template", "desktop-app"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.0"
+  },
+  "build": {
+    "appId": "com.example.electronlinuxapp",
+    "productName": "Linux Electron App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*"
+    ],
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
